@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    padding: 0;
+}
+
+/* Styling for Header */
+.heading {
+    color: white;
+    background-color: #f5ba13;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+/* Styling for Add Task Field */
+.add-task-section {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.add-task-section input,
+.add-task-section textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
+
+.add-task-section button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    font-size: 32px;
+    padding: 1px 0 0 1px;
+}
+
+.add-task-section button:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Styling for Notes */
+.note-container {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.note {
+    margin: 15px 10px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #fff;
+    vertical-align: top;
+    box-shadow: 0 2px 5px #ccc;
+    float: left;
+    width: 230px;
+    cursor: default;
+}
+
+.note:hover {
+    opacity: 0.9;
+    background-color: rgb(243, 243, 243);
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note button {
+    color: #f5ba13;
+    padding: 6px 5px;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+    background-color: transparent;
+    position: relative;
+    left: 100%;
+    transform: translateX(-110%);
+    cursor: pointer;
+}
+
+.note button:hover {
+    background-color: #f0c95d5f;
+}
+
+/* Styling for Footer */
+.custom-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: gainsboro;
+    border-top: 4px solid gray;
+}
+
+.addn-info {
+    text-align: center;
+    margin: 10px;
+}
+
+.addn-info>* {
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    .add-task-section {
+        width: 90% !important;
+    }
+
+    .note-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .note {
+        width: 90% !important;
+        margin: 5px 0;
+    }
+}
